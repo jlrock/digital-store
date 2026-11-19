@@ -1,0 +1,97 @@
+.drip-buybox {
+    display: flex;
+    flex-direction: column;
+}
+
+.drip-buybox-name {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 1.18;
+    color: var(--dark-gray);
+    margin: 0 0 10px;
+}
+
+.drip-buybox-reference {
+    font-size: 12px;
+    font-weight: 500;
+    color: var(--dark-gray-3);
+    margin-bottom: 14px;
+}
+
+.drip-buybox-rating-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.drip-buybox-stars-box {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    background-color: var(--warning);
+    color: var(--white);
+    font-size: 14px;
+    font-weight: 700;
+    padding: 4px 10px;
+    border-radius: 4px;
+}
+
+.drip-buybox-rating-text {
+    font-size: 14px;
+    color: var(--light-gray);
+}
+
+.drip-buybox-price-row {
+    display: flex;
+    align-items: baseline;
+    gap: 12px;
+    margin-bottom: 22px;
+}
+
+.drip-buybox-price-main {
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--dark-gray-2);
+}
+
+.drip-buybox-price-old {
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--light-gray-2);
+    text-decoration: line-through;
+}
+
+.drip-buybox-desc-title {
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--light-gray);
+    margin-bottom: 6px;
+}
+
+.drip-buybox-description {
+    font-size: 14px;
+    line-height: 1.57;
+    color: var(--dark-gray-2);
+    margin-bottom: 24px;
+}
+
+.drip-buybox-buy-btn {
+    width: 220px;
+    max-width: 100%;
+    height: 48px;
+    background-color: var(--warning);
+    color: var(--white);
+    font-size: 16px;
+    font-weight: 700;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 8px;
+    transition: filter 0.2s ease, transform 0.15s ease;
+}
+
+.drip-buybox-buy-btn:hover {
+    filter: brightness(0.95);
+    transform: translateY(-1px);
+}
