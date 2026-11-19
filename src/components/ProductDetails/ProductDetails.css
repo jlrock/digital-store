@@ -1,0 +1,13 @@
+.drip-breadcrumb {
+    font-size: 14px;
+    color: var(--dark-gray-2);
+    margin-bottom: 28px;
+}
+
+.drip-breadcrumb a {
+    color: var(--dark-gray-2);
+}
+
+.drip-breadcrumb a:hover {
+    color: var(--primary);
+}
