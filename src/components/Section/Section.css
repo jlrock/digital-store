@@ -1,0 +1,53 @@
+.drip-section {
+    width: 100%;
+}
+
+.drip-section-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    margin-bottom: 24px;
+}
+
+.drip-section-header--center {
+    justify-content: center;
+    position: relative;
+}
+
+.drip-section-title {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--dark-gray-2);
+    margin: 0;
+}
+
+.drip-section-header--center .drip-section-title {
+    text-align: center;
+}
+
+.drip-section-link {
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--primary);
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    white-space: nowrap;
+    transition: color 0.2s ease, gap 0.2s ease;
+}
+
+.drip-section-link:hover {
+    color: var(--tertiary);
+    gap: 12px;
+}
+
+@media (max-width: 575.98px) {
+    .drip-section-title {
+        font-size: 20px;
+    }
+
+    .drip-section-link {
+        font-size: 15px;
+    }
+}

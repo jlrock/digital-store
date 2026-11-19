@@ -1,16 +1,36 @@
-# React + Vite
+# Digital Store — Projeto Final Front-end (Geração Tech 4.0 & Digital College)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Aplicação web de e-commerce desenvolvida em **React + JavaScript + Bootstrap 5**.
 
-Currently, two official plugins are available:
+## Tecnologias Utilizadas
+- React 18
+- Vite
+- React Router DOM v6
+- Bootstrap 5
+- CSS3 (Variables & Custom Components)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Funcionalidades
+- **Página Inicial (`/`)**: Carrossel interativo de banners, coleções em destaque, atalhos por categoria, vitrine com 8 produtos em alta e seção de oferta especial.
+- **Busca Global**: Campo de busca no cabeçalho que redireciona para `/products?filter=<termo>` ao clicar na lupa ou pressionar `Enter`.
+- **Listagem de Produtos (`/produtos` e `/products`)**: Filtragem combinada por Marca, Categoria, Gênero e Estado (`FilterGroup`), ordenação por Menor/Maior preço e contagem dinâmica de resultados.
+- **Visualização de Produto (`/product/:id`)**: Galeria com miniaturas interativas (`Gallery`), seleção de variações de tamanho e cor (`ProductOptions`), informações e CTA de compra (`BuyBox`) e vitrine de produtos recomendados.
+- **Abas Extras Funcionais**: Categorias (`/categorias`), Meus Pedidos (`/meus-pedidos` com persistência em `localStorage`), Login (`/login`) e Cadastro (`/cadastro`).
 
-## React Compiler
+## Como Executar Localmente
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+```bash
+# 1. Instalar dependências
+npm install
 
-## Expanding the ESLint configuration
+# 2. Instalar arquivos extras de compilação 
+npm install build
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+# 3. Rodar o servidor de desenvolvimento
+npm run dev
+```
+
+## Observação
+Depois de executar os comandos anteriores no terminal, aperte as teclas `o + Enter` para abrir a aplicação diretamente no navegador. 
+
+## Equipe 
+- [João Lucas Simões Rocha da Silveira](https://github.com/jlrock)

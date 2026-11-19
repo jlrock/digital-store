@@ -1,122 +1,50 @@
-import { useState } from 'react'
-import heroImg from './assets/hero.png'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
-import './App.css'
+import React from 'react';
+import { Routes, Route } from 'react-router-dom';
+import HomePage from './pages/HomePage';
+import ProductListingPage from './pages/ProductListingPage';
+import ProductViewPage from './pages/ProductViewPage';
+import CategoriesPage from './pages/CategoriesPage';
+import MyOrdersPage from './pages/MyOrdersPage';
+import { LoginPage, RegisterPage, InfoPage } from './pages/AuthPages';
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <section id="center">
-        <div className="hero">
-          <img src={heroImg} className="base" width="170" height="179" alt="" />
-          <img src={reactLogo} className="framework" alt="React logo" />
-          <img src={viteLogo} className="vite" alt="Vite logo" />
-        </div>
-        <div>
-          <h1>Get started</h1>
-          <p>
-            Edit <code>src/App.jsx</code> and save to test <code>HMR</code>
-          </p>
-        </div>
-        <button
-          type="button"
-          className="counter"
-          onClick={() => setCount((count) => count + 1)}
-        >
-          Count is {count}
-        </button>
-      </section>
-
-      <div className="ticks"></div>
-
-      <section id="next-steps">
-        <div id="docs">
-          <svg className="icon" role="presentation" aria-hidden="true">
-            <use href="/icons.svg#documentation-icon"></use>
-          </svg>
-          <h2>Documentation</h2>
-          <p>Your questions, answered</p>
-          <ul>
-            <li>
-              <a href="https://vite.dev/" target="_blank">
-                <img className="logo" src={viteLogo} alt="" />
-                Explore Vite
-              </a>
-            </li>
-            <li>
-              <a href="https://react.dev/" target="_blank">
-                <img className="button-icon" src={reactLogo} alt="" />
-                Learn more
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div id="social">
-          <svg className="icon" role="presentation" aria-hidden="true">
-            <use href="/icons.svg#social-icon"></use>
-          </svg>
-          <h2>Connect with us</h2>
-          <p>Join the Vite community</p>
-          <ul>
-            <li>
-              <a href="https://github.com/vitejs/vite" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#github-icon"></use>
-                </svg>
-                GitHub
-              </a>
-            </li>
-            <li>
-              <a href="https://chat.vite.dev/" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#discord-icon"></use>
-                </svg>
-                Discord
-              </a>
-            </li>
-            <li>
-              <a href="https://x.com/vite_js" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#x-icon"></use>
-                </svg>
-                X.com
-              </a>
-            </li>
-            <li>
-              <a href="https://bsky.app/profile/vite.dev" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#bluesky-icon"></use>
-                </svg>
-                Bluesky
-              </a>
-            </li>
-          </ul>
-        </div>
-      </section>
-
-      <div className="ticks"></div>
-      <section id="spacer"></section>
-    </>
-  )
+    <Routes>
+      <Route path="/" element={<HomePage />} />
+      <Route path="/produtos" element={<ProductListingPage />} />
+      <Route path="/products" element={<ProductListingPage />} />
+      <Route path="/product/:id" element={<ProductViewPage />} />
+      <Route path="/produtos/:id" element={<ProductViewPage />} />
+      <Route path="/categorias" element={<CategoriesPage />} />
+      <Route path="/meus-pedidos" element={<MyOrdersPage />} />
+      <Route path="/login" element={<LoginPage />} />
+      <Route path="/cadastro" element={<RegisterPage />} />
+      <Route
+        path="/about"
+        element={<InfoPage title="Sobre Drip Store" subtitle="Conheça nossa história e propósito na moda streetwear e esportiva." />}
+      />
+      <Route
+        path="/security"
+        element={<InfoPage title="Segurança" subtitle="Compra protegida com criptografia e garantia de autenticidade." />}
+      />
+      <Route
+        path="/wishlist"
+        element={<InfoPage title="Wishlist" subtitle="Salve seus sneakers e peças favoritas para acompanhar promoções." />}
+      />
+      <Route
+        path="/blog"
+        element={<InfoPage title="Blog Drip Store" subtitle="Lançamentos, tendências, collabs e guias de estilo." />}
+      />
+      <Route
+        path="/careers"
+        element={<InfoPage title="Trabalhe conosco" subtitle="Faça parte do time Digital Store em Fortaleza e remoto." />}
+      />
+      <Route
+        path="*"
+        element={<InfoPage title="Página não encontrada" subtitle="A página solicitada não existe. Use o menu acima para voltar às compras." isNotFound />}
+      />
+    </Routes>
+  );
 }
 
-export default App
+export default App;

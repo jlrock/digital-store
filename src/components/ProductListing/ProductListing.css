@@ -1,0 +1,7 @@
+.drip-product-listing-empty {
+    background-color: var(--white);
+    border-radius: 4px;
+    padding: 48px 24px;
+    text-align: center;
+    color: var(--dark-gray-3);
+}
