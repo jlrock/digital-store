@@ -1,0 +1,6 @@
+<svg width="253" height="44" viewBox="0 0 253 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <rect x="0" y="5" width="33" height="33" rx="8" fill="#FFFFFF"/>
+    <path d="M9 15L15 21.5L9 28" stroke="#1F1F1F" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M17 28H24" stroke="#1F1F1F" stroke-width="3" stroke-linecap="round"/>
+    <text x="43" y="31" fill="#FFFFFF" font-family="Inter, Arial, sans-serif" font-size="31" font-weight="700" letter-spacing="-0.5">Digital Store</text>
+</svg>
