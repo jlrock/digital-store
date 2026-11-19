@@ -1,0 +1,39 @@
+.drip-home-collections-img {
+    width: 100%;
+    height: 251px;
+    object-fit: cover;
+    border-radius: 4px;
+    display: block;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.drip-collection-link:hover .drip-home-collections-img {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+.drip-category-circle {
+    width: 104px;
+    height: 104px;
+    border-radius: 50%;
+    background-color: var(--white);
+    box-shadow: 0 4px 25px rgba(0, 0, 0, 0.05);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--light-gray);
+    transition: color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.drip-category-item:hover .drip-category-circle {
+    color: var(--primary);
+    transform: translateY(-4px);
+    box-shadow: 0 8px 25px rgba(201, 32, 113, 0.14);
+}
+
+.drip-category-label {
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--dark-gray-2);
+    margin-top: 12px;
+}
